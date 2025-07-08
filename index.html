@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desa Blang Temung</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-title">
+        <img src="assets/img/logo gayo.png" alt="Logo" class="logo" />
+        <span>Desa Blang Temung</span>
+      </div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="form.html">Laporkan Aduan</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <h1>Sistem Aduan Masyarakat Desa Blang Temung</h1>
+      <a href="form.html" class="btn">Laporkan Sekarang</a>
+    </section>
+  </header>
+
+  <section id="tentang" class="content">
+    <h2>Tentang Desa</h2>
+    <p>
+      Desa Blang Temung terletak di Kecamatan Dabun Gelang, Kabupaten Gayo Lues, Aceh.
+      Nama "Blang Temung" berasal dari bahasa Gayo, dengan "Blang" berarti ladang.
+      Sejak dahulu, masyarakat desa ini hidup dari pertanian dan menjunjung tinggi adat lokal,
+      terutama dalam menjaga hutan dan sumber air melalui sistem tradisional Kejurun Blang.
+      Pada tahun 2019, desa ini ditetapkan sebagai wilayah Perhutanan Sosial (Hutan Desa),
+      memberi hak kelola hutan secara resmi kepada masyarakat.
+      Kini, Blang Temung dikenal dengan semangat gotong royong, pertanian kopi,
+      dan upaya pelestarian lingkungan berbasis kearifan lokal.
+    </p>
+  </section>
+
+  <section id="kontak" class="content">
+    <h2>Kontak Desa</h2>
+    <div class="kontak-grid">
+      <p><strong>Email:</strong> desablangtemung@gmail.com</p>
+      <p><strong>Telepon:</strong> +62 821-6438-5847</p>
+      <p><strong>Alamat:</strong> Desa Blang Temung, Kecamatan Dabun Gelang, Kabupaten Gayo Lues, Aceh</p>
+      <p><strong>Jam Layanan:</strong> Senin–Jumat, 08.00–16.00 WIB</p>
+    </div>
+
+    <div class="map-container" style="margin-top: 20px;">
+      <h3>Lokasi Desa di Peta</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.1325129071323!2d97.3088436!3d3.9041564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3039ee2457877b7d%3A0x405db83b0ded437a!2sBlangtemung%2C%20Kec.%20Dabun%20Gelang%2C%20Kabupaten%20Gayo%20Lues%2C%20Aceh!5e0!3m2!1sid!2sid!4v1720254205091!5m2!1sid!2sid"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sistem Aduan Blang Temung</p>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

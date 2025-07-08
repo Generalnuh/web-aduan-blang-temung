@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Aduan</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-title">
+        <img src="assets/img/logo gayo.png" alt="Logo" class="logo" />
+        <span>Desa Blang Temung</span>
+      </div>
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="form.html">Laporkan Aduan</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="form-container">
+    <h1>Form Aduan Masyarakat</h1>
+    <form id="aduanForm" enctype="multipart/form-data">
+      <div class="form-grid">
+        <input type="text" name="nama" placeholder="Nama Lengkap" required />
+        <input type="text" name="hp" placeholder="Nomor HP" required />
+        <select name="kategori" required>
+          <option value="">Pilih Kategori Aduan</option>
+          <option value="Fasilitas Umum">Fasilitas Umum</option>
+          <option value="Lingkungan">Lingkungan</option>
+          <option value="Pelayanan">Pelayanan</option>
+          <option value="Lainnya">Lainnya</option>
+        </select>
+        <input type="text" name="lokasi" placeholder="Lokasi Kejadian" required />
+        <textarea name="aduan" placeholder="Isi Aduan" required></textarea>
+        <label for="foto">Upload Foto (Opsional):</label>
+        <input type="file" name="foto" accept="image/*" />
+        <button type="submit">Kirim Aduan</button>
+      </div>
+    </form>
+    <div id="responseMsg"></div>
+  </main>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('show');
+    });
+  </script>
+  <script src="script/form-handler.js"></script>
+</body>
+</html>
